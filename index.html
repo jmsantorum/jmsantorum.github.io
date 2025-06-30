@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Santorum - Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Warning Banner -->
+    <div class="warning-banner">
+        <div class="warning-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span><strong>Work in Progress:</strong> This website is currently under development. The information shown
+                is placeholder content and does not reflect actual experience or projects.</span>
+            <button class="warning-close" onclick="this.parentElement.parentElement.style.display='none'">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">JM Santorum</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">JM Santorum</span></h1>
+                <p class="hero-subtitle">Software Developer & Technology Enthusiast</p>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions and exploring the latest technologies.
+                    I love turning complex problems into simple, beautiful solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated software developer with a passion for creating meaningful applications
+                        that solve real-world problems. With expertise in modern web technologies and a
+                        strong foundation in software engineering principles, I strive to build efficient,
+                        scalable, and user-friendly solutions.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to
+                        open-source projects, or sharing knowledge with the developer community. I believe
+                        in continuous learning and staying up-to-date with industry best practices.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Vue.js</span>
+                        <span class="skill-item">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">Spring Boot</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include
+                            user authentication, payment processing, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A responsive task management application with real-time updates, drag-and-drop functionality,
+                            and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Vuetify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>An interactive dashboard for visualizing complex data sets with real-time updates, custom
+                            charts, and export functionality.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or
+                        just want to say hi, feel free to reach out.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@jmsantorum.me</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/jmsantorum</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/jmsantorum</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JM Santorum. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

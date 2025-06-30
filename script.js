@@ -68,14 +68,18 @@ if (contactForm) {
         e.preventDefault();
 
         // Get form data
-        const formData = new FormData(this);
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const message = this.querySelector('textarea').value;
+        const name = this.querySelector('input[type="text"]').value.trim();
+        const email = this.querySelector('input[type="email"]').value.trim();
+        const message = this.querySelector('textarea').value.trim();
 
-        // Basic validation
+        // Enhanced validation
         if (!name || !email || !message) {
-            showNotification('Please fill in all fields.', 'error');
+            showNotification('Please fill in all required fields.', 'error');
+            return;
+        }
+
+        if (name.length < 2) {
+            showNotification('Please enter a valid name (at least 2 characters).', 'error');
             return;
         }
 
@@ -84,9 +88,24 @@ if (contactForm) {
             return;
         }
 
+        if (message.length < 10) {
+            showNotification('Please enter a message with at least 10 characters.', 'error');
+            return;
+        }
+
+        // Show loading state
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+
         // Simulate form submission (replace with actual form handling)
-        showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-        this.reset();
+        setTimeout(() => {
+            showNotification('Thank you for your message! I\'ll get back to you within 24 hours.', 'success');
+            this.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }, 1500);
     });
 }
 
